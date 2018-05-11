@@ -5,7 +5,9 @@ let articleView = {};
 // DONE: Where possible, refactor methods into arrow functions, including the document.ready() method at the bottom.
 
 // COMMENT: How do arrow functions affect the context of "this"? How did you determine if a function could be refactored?
-// PUT YOUR RESPONSE HERE
+// An arrow function expression has a shorter syntax than a function expression and does not have its own this, 
+//arguments.
+// These function expressions are best suited for non-method functions, and they cannot be used as constructors.
 
 articleView.populateFilters = () => {
   $('article').each(function() {
