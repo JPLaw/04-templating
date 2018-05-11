@@ -64,8 +64,9 @@ articleView.handleMainNav = function() {
 
 articleView.setTeasers = function() {
   $('.article-body *:nth-of-type(n+2)').hide();
-  $('article').on('click', 'a.read-on', function(e) {
+  $('.read-on').on('click', function(e) {
     e.preventDefault();
+    console.log('test')
     if ($(this).text() === 'Read on →') {
       $(this).parent().find('*').fadeIn();
       $(this).html('Show Less &larr;');
